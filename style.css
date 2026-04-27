@@ -1,0 +1,106 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: repeating-linear-gradient(
+        45deg,
+        #add8e6,
+        #add8e6 20px,
+        #b0e0e6 20px,
+        #b0e0e6 40px
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background: white;
+    border: 3px solid #87cefa;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+}
+
+button {
+    background-color: #87cefa;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #4682b4;
+}
+
+body {
+    position: relative;
+    overflow: hidden;
+}
+
+.confetti-container {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+.confetti-piece {
+    position: absolute;
+    top: -10px;
+    border-radius: 50%;
+    opacity: 0.9;
+    animation: confetti-fall ease-out forwards;
+}
+
+@keyframes confetti-fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(120vh) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+.foto {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 18px;
+    border:  6px solid white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    position: absolute;
+}
+
+.esquina1 {
+    top: 20px;
+    left: 20px;
+    transform: rotate(-8deg);
+}
+
+.esquina2 {
+    top: 20px;
+    right: 20px;
+    transform: rotate(8deg);
+}
+
+.esquina3 {
+    bottom: 20px;
+    left: 20px;
+    transform: rotate(6deg);
+}
+
+.esquina4 {
+    bottom: 20px;
+    right: 20px;
+    transform: rotate(-6deg);
+}
