@@ -72,8 +72,8 @@ body {
 }
 
 .foto {
-    width: 350px;
-    height: 350px;
+    width: 80px;
+    height: 80px;
     object-fit: cover;
     border-radius: 18px;
     border:  6px solid white;
